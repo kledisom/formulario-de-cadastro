@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" >
+
+	<title>form</title>
+	
+	<!-- <link href="./estilos/index.css" rel="stylesheet" /> -->
+	
+	<style>
+	 body {
+	  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),url('./retrato-da-equipe-nova-do-negócio-12974258.jpg');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  font-family: 'Poppins', sans-serif;
+	 }
+	 
+	 img {
+	 position: fixed;
+	 opacity: 0.5;
+	 }
+	 
+	 .container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%
+	 }
+	
+	 form {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;	  
+	  height: 100%;
+	  background-color: #161616;
+	  color: #fff;
+	  opacity: 0.8;
+	  font-size: 1.2rem;
+	  padding: 20px;
+	  
+	 }
+	 
+	 button {
+	  width: 100px;
+	  height: 50px;
+	 }
+	 
+	 h1, h5 {
+	  color: #fff;
+	 }
+
+	 .titulo {
+		width: 100%;
+		text-align: center
+	 }
+	 
+	 .form-group input {
+	  width: 100%;
+	  height: 30px;	
+	 }
+	 
+	.form-group select {
+	  width: 100%;
+	  height: 40px;
+	}
+	 
+	 .form-group {
+	  display: flex;
+	  flex-direction: column;	  
+	  justify-content: center;
+	  align-items: flex-start;	
+	  margin-bottom: 20px;
+	  width: 100%;
+	 }
+	 
+	 .form-group-teste {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  align-items: flex-start;
+	  margin-bottom: 20px;
+	 }
+
+	 .form-group-teste input {	  
+	  width: 20px;
+	  height: 20px;  
+	 }
+
+ 	 .form-group button {	  
+	  width: 100%;
+	  height: 50px; 
+	  background-color:rgba(7, 192, 47, 0.986);
+	  margin-top: 30px; 
+	 }
+
+	 .form-group label {  
+	  margin-top: 10px; 
+	  margin-bottom: 10px; 
+	 }
+
+	 textarea {	 
+	  width: 100%;
+	  margin-top: 10px; 
+	  margin-bottom: 10px; 
+	 }
+	  
+	 
+	</style>
+	
+</head>
+<body class="container">
+
+	<div>
+	 <div class="titulo">
+		<h1>DADOS INDIVIDUAIS</h1>
+		  <h5>Exemplo de formulario básico</h5>
+	</div>
+		  <form>
+      
+		 <div class="form-group">
+		       <label>Nome</label> 
+				<input type="text" placeholder="Digite seu Nome" />
+		 </div>
+		   <div class="form-group">
+		       <label>Email</label> 
+				<input type="text" placeholder="Digite seu Email" />
+		   </div>  
+		   <div class="form-group">
+		   	 <label>Idade</label> 
+				<input type="text" placeholder="Idade" />
+		   </div> 
+			<div class="form-group">
+		   	 <label>Qual opção melhor descreve sua função atual?</label> 
+				<select>
+				     <option>selecione uma opção</option>
+				     <option>Estudante</option>
+				     <option>Junior</option>
+				     <option>Pleno</option>
+				     <option>Sênior</option>
+				</select>
+		   </div> 
+			<div class="form-group-teste">
+		   	 <label>Você recomendaria o freeCodeCamp a um amigo?</label> 
+			  <div>
+				<input type="radio" value="definitivamente" />
+				<label>definitivamente</label> 
+			  </div>
+			   <div>
+				<input type="radio" value="pode ser" />  
+				<label>pode ser</label>   
+			   </div>	 
+			    <div>
+				  <input type="radio" value="não tenho certeza" /> 
+				   <label>não tenho certeza</label> 
+				</div>  
+			  
+				  
+		   </div> 
+			<div class="form-group">
+		     <label> Qual é o seu recurso favorito do freeCodeCamp?</label> 
+				    <select>
+					 <option>selecione uma opção</option>
+					  <option>Testes</option>
+					   <option>Projetos</option>
+						<option>Comunidade</option>
+						 <option>Open Source</option>
+					</select>
+		   </div> 			
+	 <div class="form-group-teste">		  				
+	 <label>O que você gostaria de ter melhorado?</label>
+	 <div><input type="checkbox">Front-end Projects</input> </div>
+		<div><input type="checkbox">Back-end Projects</input> </div>
+			<div><input type="checkbox">Data Visualization</input> </div>
+				<div><input type="checkbox">Challenges</input> </div>
+					<div><input type="checkbox">Open Source Community</input> </div>
+						<div><input type="checkbox">Gitter help rooms</input> </div>
+					<div><input type="checkbox">Videos</input> </div>
+				<div><input type="checkbox">City Meetups</input> </div>
+			<div><input type="checkbox">Wiki</input> </div>
+		<div><input type="checkbox">Forum</input> </div>
+	 <div><input type="checkbox">Additional Courses</input></div> 
+	
+	 </div> 	
+		<div class="form-group">
+			<label>Deixe seu comentario ou sugestão!</label> 			  
+				<textarea rows="6" cols="56" placeholder="digite seu comentario" ></textarea>	
+			<button>Submit</button>	
+		</div>	 
+			
+	 </form>
+	</div>
+
+
+<script></script>
+</body>
+</html>
